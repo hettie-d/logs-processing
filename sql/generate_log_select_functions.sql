@@ -6,8 +6,7 @@ select * from sweets_logs.select_query_pid_count('chocolate',
 $$BEGIN$$,'2024-05-15')
 
 */
-	
----select * from logs_meta.generate_log_select_functions('sweets')
+	---select * from logs_meta.generate_log_select_functions('sweets')
 create or replace function logs_meta.generate_log_select_functions (p_customer_name text)
 returns text
 language plpgsql as
