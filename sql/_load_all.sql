@@ -10,3 +10,4 @@ create schema logs_meta;
 \ir procedures/create_log_partition.sql
 \ir procedures/create_log_partition_cron.sql
 \ir procedures/load_log_file.sql
+\ir generate_search_functions.sql

@@ -103,19 +103,3 @@ raise notice '%', v_create_sql;
 execute v_create_sql;
 return v_create_sql;
 end; $func$;
-
-
-/*
-
-select distinct pid from cumberland_logs.reflect_cert_log
-where substr (lower(query),1, 1000) like 'select message from extended_trade_response%'
-
-	and log_sample_time='2024-05-15'
-
-select * from cumberland_logs.reflect_cert_log
-where pid=76045 and log_sample_time='2024-05-15' order by 1 desc
-
-select min(duration), max(duration), avg(duration) from cumberland_logs.reflect_cert_log
-where pid=76045 and duration is not null
-
-*/
